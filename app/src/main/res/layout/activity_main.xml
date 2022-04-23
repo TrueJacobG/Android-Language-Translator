@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/gray"
+    style="@style/AppTheme.MaterialTheme"
     tools:context=".MainActivity">
+
 
     <TextView
         android:layout_width="match_parent"
@@ -65,5 +67,57 @@
 
 
         </LinearLayout>
+    
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/idEdtSource"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textImeMultiLine|textMultiLine"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idBtnTranslate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Translate"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/idTVTranslatedTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:gravity="center"
+
+        android:text="Translated Text"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        />
 
 </LinearLayout>
